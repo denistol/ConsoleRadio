@@ -1,22 +1,24 @@
 {
-  "name": "radio",
-  "version": "1.0.0",
-  "description": "",
+  "name": "consoleradio",
+  "version": "2.0.0",
+  "description": "Modern terminal internet radio with animated ASCII equalizer, global search, and hotkeys",
   "main": "index.js",
-  "assets": "./assets",
+  "bin": {
+    "consoleradio": "./index.js",
+    "radio": "./index.js"
+  },
   "scripts": {
-    "start": "node index"
+    "start": "node index.js"
   },
-  "pkg": {
-    "assets": "assets"
-  },
-  "keywords": [],
-  "bin": "index.js",
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cli-clear": "^1.0.4",
-    "inquirer": "^7.0.0",
-    "node-mpv": "^1.4.3"
-  }
+  "keywords": [
+    "radio",
+    "terminal",
+    "tui",
+    "mpv",
+    "equalizer",
+    "spectrum",
+    "cli"
+  ],
+  "author": "Denis",
+  "license": "ISC"
 }
